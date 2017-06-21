@@ -1,0 +1,23 @@
+<div ng-app="app">
+  <div ng-controller="bobCtrl">
+
+    <div id="tasks">
+      <h4>Tasks:</h4>
+      <ul>
+        <li ng-repeat="task in tasks"> <p ng-class="{strike:
+        task.text }"></p><br> <input ng-model="task.text"></li>
+      </ul>
+      <br>
+      <br>
+      <br>
+
+      <!-- Add new task -->
+      <input ng-model="newTask">
+      <button ng-click="addTask(newTask)">Add task </button>
+
+
+
+    </div>
+  </div>
+</div>
+
